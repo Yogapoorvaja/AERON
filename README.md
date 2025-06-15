@@ -10,7 +10,6 @@ AERON is built to showcase edge-deployed conversational intelligence**. It proce
 Unlike typical AI assistants that depend on cloud-based services, AERON runs a **custom LLM (Language Model)** trained on a **micro-dataset**, supported by:
 - A homemade tokenizer and vector embedding engine
 - A transformer-based encoder-decoder architecture
-- Offline speech-to-text and text-to-speech using **eSpeak**
 - ROS (Robot Operating System) for robot motion and simulation
 
 ## 🧠 Key Features
@@ -44,7 +43,6 @@ Unlike typical AI assistants that depend on cloud-based services, AERON runs a *
 
 - `Python`
 - `PyTorch` (for model)
-- `eSpeak` (for offline TTS)
 - `Wavefile IO` (for STT processing)
 - `ROS` (for robotic simulation)
-- `Jetson Nano` / `Raspberry Pi` (deployment)
+- `Jetson Nano`  (deployment)
