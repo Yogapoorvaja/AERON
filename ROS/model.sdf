@@ -1,0 +1,104 @@
+<?xml version="1.0" ?>
+<sdf version="1.9">
+  <model name="tars_robot">
+    <!-- Base Link (Segment 1) -->
+    <link name="segment_1">
+      <pose>0 0 0.4 0 0 0</pose>
+      <inertial>
+        <mass>10.0</mass>
+        <inertia>
+          <ixx>0.133</ixx>
+          <ixy>0.0</ixy>
+          <ixz>0.0</ixz>
+          <iyy>0.533</iyy>
+          <iyz>0.0</iyz>
+          <izz>0.667</izz>
+        </inertia>
+      </inertial>
+      <visual name="segment_1_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/segment.stl</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.5 0.5 0.5 1</ambient>
+          <diffuse>0.5 0.5 0.5 1</diffuse>
+        </material>
+      </visual>
+      <collision name="segment_1_collision">
+        <geometry>
+          <mesh>
+            <uri>meshes/segment.stl</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <!-- Segment 2 -->
+    <link name="segment_2">
+      <pose>0 0 1.2 0 0 0</pose>
+      <inertial>
+        <mass>10.0</mass>
+        <inertia>
+          <ixx>0.133</ixx>
+          <ixy>0.0</ixy>
+          <ixz>0.0</ixz>
+          <iyy>0.533</iyy>
+          <iyz>0.0</iyz>
+          <izz>0.667</izz>
+        </inertia>
+      </inertial>
+      <visual name="segment_2_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/segment.stl</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.5 0.5 0.5 1</ambient>
+          <diffuse>0.5 0.5 0.5 1</diffuse>
+        </material>
+      </visual>
+      <collision name="segment_2_collision">
+        <geometry>
+          <mesh>
+            <uri>meshes/segment.stl</uri>
+            <scale>1 1 1</scale>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <joint name="hinge_1" type="revolute">
+      <parent>segment_1</parent>
+      <child>segment_2</child>
+      <pose>0 0 0.8 0 0 0</pose>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-1.57</lower>
+          <upper>1.57</upper>
+        </limit>
+      </axis>
+    </joint>
+    <!-- Segment 3 -->
+    <link name="segment_3">
+      <pose>0 0 2.0 0 0 0</pose>
+      <inertial>
+        <mass>10.0</mass>
+        <inertia>
+          <ixx>0.133</ixx>
+          <ixy>0.0</ixy>
+          <ixz>0.0</ixz>
+          <iyy>0.533</iyy>
+          <iyz>0.0</iyz>
+          <izz>0.667</izz>
+        </inertia>
+      </inertial>
+      <visual name="segment_3_visual">
+        <geometry>
+          <mesh>
+            <uri>meshes/segment.stl</uri>
+            <scale>1 1 1</scale>
