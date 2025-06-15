@@ -1,0 +1,15 @@
+<package format="3">
+<name>aeron</name>
+<version>0.0.0</version>
+<description>AERON TARS simulation package</description>
+<maintainer email="gautam@example.com">Gautam</maintainer>
+<license>Apache-2.0</license>
+<depend>ros_gz</depend>
+<depend>joy</depend>
+<depend>geometry_msgs</depend>
+<depend>rclpy</depend>
+<exec_depend>gz-harmonic</exec_depend>
+<export>
+<build_type>ament_python</build_type>
+</export>
+</package>
